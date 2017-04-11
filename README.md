@@ -1,5 +1,4 @@
-# Relevant urban
-[![Build Status](https://travis-ci.org/Shinonome-Laboratory/relevant-urban.svg?branch=master)](https://travis-ci.org/Shinonome-Laboratory/relevant-urban)
+# Relevant urban [![Build Status](https://travis-ci.org/Shinonome-Laboratory/relevant-urban.svg?branch=master)](https://travis-ci.org/Shinonome-Laboratory/relevant-urban)
 This module was meant to replace ~~shitty~~ [urban](https://github.com/mvrilo/urban) module
 as it uses callbacks and does useless stuff.
 
