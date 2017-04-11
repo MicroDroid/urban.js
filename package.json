@@ -1,0 +1,18 @@
+{
+     "name": "relevant-urban",
+     "version": "1.0.0",
+     "description": "Gets definitions from Urban Dictionary.",
+     "main": "urban.js",
+     "author": "MrSakamoto-san",
+     "license": "MIT",
+     "dependencies": {
+          "snekfetch": "^2.2.0"
+     },
+     "repository": {
+          "type": "git",
+          "url": "https://github.com/Shinonome-Laboratory/relevant-urban.git"
+     },
+     "bugs": {
+          "url": "https://github.com/Shinonome-Laboratory/relevant-urban/issues"
+     }
+}
