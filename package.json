@@ -1,7 +1,7 @@
 {
      "name": "relevant-urban",
-     "version": "1.1.1",
-     "description": "Gets definitions from Urban Dictionary.",
+     "version": "1.1.2",
+     "description": "urbandictionary.org API wrapper made for everyone with useful methods using promises and snekfetch",
      "main": "urban.js",
      "author": "MrSakamoto-san",
      "license": "MIT",
