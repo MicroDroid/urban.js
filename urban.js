@@ -104,5 +104,5 @@ module.exports = Object.assign(first, {
     all,
     random,
     search,
-    version: '1.0.0'
+    version: require('./package.json').version
 });
