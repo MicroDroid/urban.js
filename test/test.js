@@ -1,20 +1,22 @@
 const urban = require('../urban.js');
-const line = '\n' + '-'.repeat(40);
+const test = require('ava');
 
-const print = urBan => console.log(
-    `${urBan.id} | ${urBan.word}\n\n${urBan.definition}` +
-    line);
+test('Fetching random urban definition', t => urban.random()
+.then(d =>t.truthy(d))
+.catch(e => t.falsy(e)));
 
-console.log(line);
+test('Fetching \'hello\' urban definition', t => urban('hello')
+.then(d =>t.truthy(d))
+.catch(e => t.falsy(e)));
 
-urban.random()
-    .then(print);
+test('Fetching \'fsiojgjsgjsgihsghghjsh\' urban definition', t => urban('fsiojgjsgjsgihsghghjsh')
+.then(d =>t.falsy(d))
+.catch(e => t.falsy(e)));
 
-urban('hello')
-    .then(print);
+test('Fetching random specific urban definition', t => urban.random('hello')
+.then(d =>t.truthy(d))
+.catch(e => t.falsy(e)));
 
-urban.all('hello')
-    .then(u => print(u[0]));
-
-urban.random('hello')
-    .then(print);
+test('Fetching all specific urban definitions', t => urban.all('hello')
+.then(d =>t.true(typeof d == 'object'))
+.catch(e => t.falsy(e)));

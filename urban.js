@@ -5,7 +5,7 @@ const ArrayRandom = array => array[Math.floor(Math.random() * array.length)];
 function search(query, page = 1) {
     return new snekfetch('GET', `${api}/define?page=${page}&term=${query}`)
     .then(res => res.body)
-    .then(body => body.result_type == 'no_results' ? null : body);
+    .then(body => body.result_type == 'no_results' ? Promise.reject(null) : body);
 }
 
 function first(query) {
@@ -14,7 +14,7 @@ function first(query) {
       Object.assign(new Definition(body.list[0]), {
           tags: Array.from(new Set(body.tags)),
           sounds: body.sounds
-      }) : null);
+      }) : Promise.reject(null));
 }
 
 function all(query) {
@@ -23,7 +23,7 @@ function all(query) {
       Object.assign(body.list.map(d => new Definition(d)), {
           tags: Array.from(new Set(body.tags)),
           sounds: body.sounds
-      }) : null);
+      }) : Promise.reject(null));
 }
 
 function random(query = null) {
@@ -35,7 +35,7 @@ function random(query = null) {
       Object.assign(new Definition(ArrayRandom(body.list)), {
           tags: Array.from(new Set(body.tags)),
           sounds: body.sounds
-      }) : null);
+      }) : Promise.reject(null));
 }
 
 class Definition {
