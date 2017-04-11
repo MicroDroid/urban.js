@@ -10,6 +10,7 @@
           "api"
      ],
      "dependencies": {
+          "eslint": "^3.19.0",
           "snekfetch": "^2.2.0"
      },
      "scripts": {
