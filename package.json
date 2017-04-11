@@ -19,7 +19,7 @@
           "test": "npm run lint && npm run check",
           "lint": "eslint urban.js test/test.js",
           "lint:fix": "eslint --fix urban.js test/test.js",
-          "check": "ava -v"
+          "check": "node_modules/.bin/ava -v"
      },
      "repository": {
           "type": "git",
