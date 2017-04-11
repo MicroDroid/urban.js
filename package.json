@@ -1,6 +1,6 @@
 {
      "name": "relevant-urban",
-     "version": "1.0.0",
+     "version": "1.1.0",
      "description": "Gets definitions from Urban Dictionary.",
      "main": "urban.js",
      "author": "MrSakamoto-san",
@@ -13,8 +13,9 @@
           "snekfetch": "^2.2.0"
      },
      "scripts": {
-          "test": "npm run lint",
-          "lint": "eslint urban.js"
+          "test": "npm run lint && npm run check",
+          "lint": "eslint urban.js",
+          "check": "node test/test.js"
      },
      "repository": {
           "type": "git",
