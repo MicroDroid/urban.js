@@ -1,6 +1,6 @@
 {
      "name": "relevant-urban",
-     "version": "1.1.0",
+     "version": "1.1.1",
      "description": "Gets definitions from Urban Dictionary.",
      "main": "urban.js",
      "author": "MrSakamoto-san",
