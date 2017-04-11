@@ -1,6 +1,6 @@
 {
      "name": "relevant-urban",
-     "version": "1.1.5",
+     "version": "1.2.0",
      "description": "Urban Dictionary API wrapper made for everyone with useful methods using promises and snekfetch",
      "main": "urban.js",
      "author": "MrSakamoto-san",
@@ -17,7 +17,7 @@
      },
      "scripts": {
           "test": "npm run lint && npm run check",
-          "lint": "eslint urban.js",
+          "lint": "eslint urban.js test/test.js",
           "check": "node test/test.js"
      },
      "repository": {
