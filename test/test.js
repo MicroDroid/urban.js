@@ -9,7 +9,7 @@ test('Fetching \'hello\' urban definition', t => urban('hello')
 .then(d =>t.truthy(d))
 .catch(e => t.falsy(e)));
 
-test('Fetching \'fsiojgjsgjsgihsghghjsh\' urban definition', t => urban('fsiojgjsgjsgihsghghjsh')
+test('Fetching \'fsiojgjsgjsgihsghghjsh\' urban definition (success if not found)', t => urban('fsiojgjsgjsgihsghghjsh')
 .then(d =>t.falsy(d))
 .catch(e => t.falsy(e)));
 
