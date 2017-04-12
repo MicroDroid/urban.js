@@ -1,4 +1,4 @@
-# Relevant urban [![Build Status](https://travis-ci.org/Shinonome-Laboratory/relevant-urban.svg?branch=master)](https://travis-ci.org/Shinonome-Laboratory/relevant-urban)
+# Relevant urban [![Build Status](https://travis-ci.org/Shinonome-Laboratory/relevant-urban.svg?branch=master)](https://travis-ci.org/Shinonome-Laboratory/relevant-urban) [![NPM](https://nodei.co/npm/relevant-urban.png?mini=true)](https://nodei.co/npm/relevant-urban/)
 <p align="center">
   <img src="https://github.com/Shinonome-Laboratory/relevant-urban/blob/master/ud.png?raw=true" alt="Urban Dictionary API wrapper logo"/>
 </p>
