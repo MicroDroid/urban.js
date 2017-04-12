@@ -1,4 +1,7 @@
 # Relevant urban [![Build Status](https://travis-ci.org/Shinonome-Laboratory/relevant-urban.svg?branch=master)](https://travis-ci.org/Shinonome-Laboratory/relevant-urban)
+<p align="center">
+  <img src="https://github.com/Shinonome-Laboratory/relevant-urban/blob/master/ud.png?raw=true" alt="Urban Dictionary API wrapper logo"/>
+</p>
 This module was meant to replace ~~shitty~~ [urban](https://github.com/mvrilo/urban) module
 as it uses callbacks and does useless stuff.
 
