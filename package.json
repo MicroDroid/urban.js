@@ -1,6 +1,6 @@
 {
      "name": "relevant-urban",
-     "version": "1.3.2",
+     "version": "1.3.3",
      "description": "Urban Dictionary API wrapper made for everyone with useful methods using promises and snekfetch",
      "main": "urban.js",
      "author": "MrSakamoto-san",
@@ -24,9 +24,9 @@
      },
      "repository": {
           "type": "git",
-          "url": "https://github.com/Shinonome-Laboratory/relevant-urban.git"
+          "url": "https://github.com/SnekLab/relevant-urban.git"
      },
      "bugs": {
-          "url": "https://github.com/Shinonome-Laboratory/relevant-urban/issues"
+          "url": "https://github.com/SnekLab/relevant-urban/issues"
      }
 }
