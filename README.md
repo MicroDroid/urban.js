@@ -1,4 +1,5 @@
-# Relevant urban [![Build Status](https://travis-ci.org/SnekLab/relevant-urban.svg?branch=master)](https://travis-ci.org/SnekLab/relevant-urban) [![NPM](https://nodei.co/npm/relevant-urban.png?mini=true)](https://nodei.co/npm/relevant-urban/)
+# Relevant urban [![NPM](https://nodei.co/npm/relevant-urban.png?mini=true)](https://nodei.co/npm/relevant-urban/) [![Build Status](https://travis-ci.org/SnekLab/relevant-urban.svg?branch=master)](https://travis-ci.org/SnekLab/relevant-urban) [![Greenkeeper badge](https://badges.greenkeeper.io/SnekLab/relevant-urban.svg)](https://greenkeeper.io/)
+
 <p align="center">
   <img src="https://github.com/SnekLab/relevant-urban/blob/master/ud.png?raw=true" alt="Urban Dictionary API wrapper logo"/>
 </p>
