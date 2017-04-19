@@ -1,108 +1,43 @@
 const snekfetch = require('snekfetch');
-const api = 'https://api.urbandictionary.com/v0';
-const ArrayRandom = array => array[Math.floor(Math.random() * array.length)];
+const { BASE_URL, DEFINITION, randomArrayItem } = require('./Constants');
 
-function search(query, page = 1) {
-    return new snekfetch('GET', `${api}/define?page=${page}&term=${query}`)
-    .then(res => res.body)
-    .then(body => body.result_type == 'no_results' ? Promise.reject(null) : body);
-}
-
-function first(query) {
-    return search(query)
-    .then(body => body ?
-      Object.assign(new Definition(body.list[0]), {
-          tags: Array.from(new Set(body.tags)),
-          sounds: body.sounds
-      }) : Promise.reject(null));
-}
-
-function all(query) {
-    return search(query)
-    .then(body => body ?
-      Object.assign(body.list.map(d => new Definition(d)), {
-          tags: Array.from(new Set(body.tags)),
-          sounds: body.sounds
-      }) : Promise.reject(null));
-}
-
-function random(query = null) {
-    if (!query) return new snekfetch('GET', `${api}/random`)
-    .then(res => res.body)
-    .then(body => body.result_type == 'no_results' ? null : new Definition(body.list[0]));
-    else return search(query)
-    .then(body => body ?
-      Object.assign(new Definition(ArrayRandom(body.list)), {
-          tags: Array.from(new Set(body.tags)),
-          sounds: body.sounds
-      }) : Promise.reject(null));
-}
-
-class Definition {
-    constructor({
-    defid,
-    word,
-    definition,
-    example,
-    permalink,
-    thumbs_up,
-    author,
-    thumbs_down
-  }) {
-
-    /**
-     * ID of definition.
-     * @type {number}
-     */
-        this.id = defid;
-
-    /**
-     * Word used for definition.
-     * @type {string}
-     */
-        this.word = word;
-
-    /**
-     * Definition itself.
-     * @type {string}
-     */
-        this.definition = definition;
-
-    /**
-     * Definition example.
-     * @type {string}
-     */
-        this.example = example;
-
-    /**
-     * Definition URL.
-     * @type {string}
-     */
-        this.urbanURL = permalink;
-
-    /**
-     * Definition author name.
-     * @type {string}
-     */
-        this.author = author;
-
-    /**
-     * Definition thumbs up.
-     * @type {number}
-     */
-        this.thumbsUp = thumbs_up;
-
-    /**
-     * Definition thumbs down.
-     * @type {number}
-     */
-        this.thumbsDown = thumbs_down;
+class Urban {
+    static first(query) {
+        return this.search(query)
+        .then(body => new DEFINITION(body.list[0], body));
     }
+    
+    static random(query = null) {
+        if (!query) return this.getRandom(query)
+        .then(body => new DEFINITION(body.list[0], body));
+        else return this.search(query)
+        .then(body => new DEFINITION(randomArrayItem(body.list), body));
+    }
+    
+    static all(query) {
+        return this.search(query)
+        .then(body => body.list.map(d => new DEFINITION(d, body)));
+    }
+    
+    static search(query, page = 1) {
+        return new snekfetch('GET', `${BASE_URL}/define?page=${page}&term=${query}`)
+        .then(res => res.body && res.body.result_type != 'no_results' ? res.body : Promise.reject(TypeError('No results')));
+    }
+    
+    static getRandom() {
+        return new snekfetch('GET', `${BASE_URL}/random`)
+        .then(res => res.body && res.body.result_type != 'no_results' ? res.body : Promise.reject(TypeError('No results')));
+    }
+    
+    static get version() {
+        return require('./package.json').version;
+    }
+
 }
 
-module.exports = Object.assign(first, {
-    all,
-    random,
-    search,
-    version: require('./package.json').version
-});
+module.exports = Object.assign(Urban.first.bind(Urban), {
+    search: Urban.search,
+    definition: DEFINITION,
+    all: Urban.all.bind(Urban),
+    random: Urban.random.bind(Urban),
+    version: Urban.version });
