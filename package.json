@@ -1,6 +1,6 @@
 {
      "name": "relevant-urban",
-     "version": "1.3.4",
+     "version": "1.3.5",
      "description": "Urban Dictionary API wrapper made for everyone with useful methods using promises and snekfetch",
      "main": "urban.js",
      "author": "MrSakamoto-san",
@@ -10,13 +10,15 @@
           "api",
           "dictionary",
           "definition",
-          "relevant"
+          "relevant",
+          "sneklab"
      ],
      "dependencies": {
           "snekfetch": "^2.2.0"
      },
      "devDependencies": {
-          "eslint": "^3.19.0"
+          "eslint": "^3.19.0",
+          "ava": "^0.19.1"
      },
      "scripts": {
           "test": "npm run lint && npm run check",
