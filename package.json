@@ -14,7 +14,7 @@
           "sneklab"
      ],
      "dependencies": {
-          "snekfetch": "^3.0.1"
+          "snekfetch": "^3.4.2"
      },
      "devDependencies": {
           "ava": "^0.19.1",
