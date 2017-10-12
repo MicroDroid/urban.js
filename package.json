@@ -22,7 +22,7 @@
   },
   "scripts": {
     "lint:fix": "eslint --fix src/ test/",
-    "test": "node ./node_modules/.bin/jest",
+    "test:jest": "node ./node_modules/.bin/jest",
     "status:error": "node ./status/s.js error",
     "status:pending": "node ./status/s.js pending",
     "status:success": "node ./status/s.js success",
