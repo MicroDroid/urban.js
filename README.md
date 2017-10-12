@@ -1,7 +1,9 @@
-# Relevant urban [![NPM](https://nodei.co/npm/relevant-urban.png?mini=true)](https://nodei.co/npm/relevant-urban/) [![Build Status](https://travis-ci.org/SnekJS/urban.js.svg?branch=master)](https://travis-ci.org/SnekJS/urban.js)
-
 <p align="center">
-  <img src="https://github.com/SnekJS/urban.js/blob/master/assets/Urban.js.png?raw=true" alt="Urban Dictionary API wrapper logo"/>
+  <img href="https://github.com/SnekJS/urban.js" src="https://github.com/SnekJS/urban.js/blob/master/assets/Urban.js.png?raw=true" alt="Urban.js logo"/>
+</p>
+
+<p align="right">
+  <img href="https://travis-ci.org/SnekJS/urban.js" src="https://travis-ci.org/SnekJS/urban.js.svg?branch=master" alt="Travis-CI Status"/>
 </p>
 
 ```js
