@@ -18,7 +18,7 @@ test('Fetching \'fsiojgjsgjsgihsghghjsh\' urban definition (success if not found
 test('Fetching random specific urban definition', () => urban.random('hello')
   .then((d) => {
     expect(d).toBeInstanceOf(urban.definition);
-    expect(d.word).toMatch(/hello/);
+    expect(d.word).toMatch(/hello/i);
     expect(d.tags).not.toBeNull();
   }));
 
@@ -26,6 +26,6 @@ test('Fetching all specific urban definitions', () => urban.all('hello')
   .then((d) => {
     expect(d).toBeInstanceOf(Array);
     expect(d[0]).toBeInstanceOf(urban.definition);
-    expect(d[0].word).toMatch(/hello/);
+    expect(d[0].word).toMatch(/hello/i);
     expect(d[0].tags).not.toBeNull();
   }));
