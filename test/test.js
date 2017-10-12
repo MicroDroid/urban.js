@@ -1,5 +1,5 @@
 /* global test expect */
-const urban = require('../');
+const urban = require('../src');
 
 test('Fetching random urban definition', () => expect(urban.random())
   .resolves.toBeInstanceOf(urban.definition));
