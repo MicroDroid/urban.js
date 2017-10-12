@@ -22,7 +22,7 @@ test('Fetching random specific urban definition', () => urban.random('hello')
     expect(d.tags).not.toBeNull();
   }));
 
-test('Fetching all specific urban definitions', () => urban('hello')
+test('Fetching all specific urban definitions', () => urban.all('hello')
   .then((d) => {
     expect(d).toBeInstanceOf(Array);
     expect(d[0]).toBeInstanceOf(urban.definition);
