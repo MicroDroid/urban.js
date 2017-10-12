@@ -1,11 +1,8 @@
-# Relevant urban [![NPM](https://nodei.co/npm/relevant-urban.png?mini=true)](https://nodei.co/npm/relevant-urban/) [![Build Status](https://travis-ci.org/SnekLab/relevant-urban.svg?branch=master)](https://travis-ci.org/SnekLab/relevant-urban) [![Greenkeeper badge](https://badges.greenkeeper.io/SnekLab/relevant-urban.svg)](https://greenkeeper.io/)
+# Relevant urban [![NPM](https://nodei.co/npm/relevant-urban.png?mini=true)](https://nodei.co/npm/relevant-urban/) [![Build Status](https://travis-ci.org/SnekJS/urban.js.svg?branch=master)](https://travis-ci.org/SnekJS/urban.js)
 
 <p align="center">
-  <img src="https://github.com/SnekLab/relevant-urban/blob/master/ud.png?raw=true" alt="Urban Dictionary API wrapper logo"/>
+  <img src="https://github.com/SnekJS/urban.js/blob/master/assets/ud.png?raw=true" alt="Urban Dictionary API wrapper logo"/>
 </p>
-
-This module was meant to replace ~~shitty~~ [urban](https://github.com/mvrilo/urban) module
-as it uses callbacks and does useless stuff.
 
 ```js
 const urban = require('relevant-urban');

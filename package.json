@@ -1,36 +1,41 @@
 {
-     "name": "relevant-urban",
-     "version": "2.0.0",
-     "description": "Urban Dictionary API wrapper made for everyone with useful methods using promises and snekfetch",
-     "main": "urban.js",
-     "author": "MrSakamoto-san",
-     "license": "MIT",
-     "keywords": [
-          "urban",
-          "api",
-          "dictionary",
-          "definition",
-          "relevant",
-          "sneklab"
-     ],
-     "dependencies": {
-          "snekfetch": "^3.4.2"
-     },
-     "devDependencies": {
-          "ava": "^0.19.1",
-          "eslint": "^3.19.0"
-     },
-     "scripts": {
-          "test": "npm run lint && npm run check",
-          "lint": "eslint urban.js Constants.js test/",
-          "lint:fix": "eslint --fix urban.js Constants.js test/",
-          "check": "node_modules/.bin/ava -v"
-     },
-     "repository": {
-          "type": "git",
-          "url": "https://github.com/SnekLab/relevant-urban.git"
-     },
-     "bugs": {
-          "url": "https://github.com/SnekLab/relevant-urban/issues"
-     }
+  "license": "MIT",
+  "version": "2.0.0",
+  "name": "urban.js",
+  "main": "src/urban.js",
+  "author": "professor-cat",
+  "description": "Urban Dictionary API wrapper made for everyone with useful methods using promises and snekfetch",
+  "keywords": [
+    "api",
+    "urban",
+    "snekjs",
+    "sneklab",
+    "dictionary",
+    "definition"
+  ],
+  "dependencies": {
+    "snekfetch": "^3.5.1"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "eslint": "^4.8.0"
+  },
+  "scripts": {
+    "lint:fix": "eslint --fix src/ test/",
+    "test": "node ./node_modules/.bin/jest",
+    "status:error": "node ./status/s.js error",
+    "status:pending": "node ./status/s.js pending",
+    "status:success": "node ./status/s.js success",
+    "lint": "./node_modules/.bin/eslint src/ test/"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SnekJS/urban.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SnekJS/urban.js/issues"
+  }
 }
