@@ -4,15 +4,8 @@ node_js:
   - "7"
   - "6"
 install: npm install
-
-jobs:
-  include:
-    - stage: test
-      script: bash ./scripts/test.sh
-
 cache:
   directories:
     - node_modules
-
 notifications:
   email: false

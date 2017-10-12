@@ -12,4 +12,6 @@ const status = new Status({
 });
 
 if (state == 'pending') return status.start();
+if (state == 'success') return status.pass();
+if (state == 'error') return status.fail();
 return null;
