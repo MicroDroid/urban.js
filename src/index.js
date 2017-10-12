@@ -38,4 +38,4 @@ module.exports = Object.assign(Urban.first, {
   search: Urban.search,
   random: Urban.random,
   definition: DEFINITION,
-  version: require('./package.json').version });
+  version: require('../package.json').version });
