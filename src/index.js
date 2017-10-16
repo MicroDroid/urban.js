@@ -23,6 +23,12 @@ const Urban = {
     }
   },
 
+  fetch(id) {
+    return new fetch('GET', `${BASE_URL}/define?&defid=${id}`)
+      .then(({ body }) => body && body.result_type != 'no_results' ?
+        new DEFINITION(body.list[0], body) : Promise.reject(TypeError('No results')));
+  },
+
   all(query, page) {
     return Urban.search(query, page)
       .then((body) => body.list.map((d) => new DEFINITION(d, body)));

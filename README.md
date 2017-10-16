@@ -16,6 +16,7 @@ const urban = require('urban.js');
 | Methods                |           returns               |                         description                       |
 |------------------------|---------------------------------|-----------------------------------------------------------|
 | urban('string')        | `=> Promise<Definition>`        | Gets first definition from urban matching provided query  |
+| urban.fetch('id') | `=> Promise<Definition>`        | Gets definition from urban by Definition id |
 | urban.random()         | `=> Promise<Definition>`        | Gets random definition from urban                         |
 | urban.random('string') | `=> Promise<Definition>`        | Gets random definition from urban matching provided query |
 | urban.all('string'[, page=1])    | `=> Promise<Array<Definition>>` | Gets all definitions from given page matching provided query  |
