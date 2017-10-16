@@ -39,10 +39,10 @@ module.exports = {
       this.example = example;
 
       /**
-                * Definition URL.
+                * Definition permalink.
                 * @type {string}
                 */
-      this.urbanURL = permalink;
+      this.URL = permalink;
 
       /**
                 * Definition author name.
