@@ -2,8 +2,9 @@
   "license": "MIT",
   "version": "2.2.0",
   "name": "urban.js",
-  "main": "src/index.js",
   "author": "SnekJS",
+  "main": "src/index.js",
+  "github": "https://github.com/SnekJS/urban.js",
   "description": "📜 Urban Dictionary API wrapper",
   "keywords": [
     "api",

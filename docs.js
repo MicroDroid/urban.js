@@ -22,7 +22,7 @@ Docma.create()
       emoji: true,
     },
     src: [
-      { readme: './README.md' },
+      { main: './MAIN.md' },
       { urban: './src/index.js' },
       { definition: './src/Definition.js' },
     ],
@@ -35,17 +35,22 @@ Docma.create()
         title: Package.name,
         navItems: [
           {
-            label: 'Readme',
-            href: '?content=readme',
+            label: 'Main',
+            href: '?content=main',
           },
           {
-            label: 'Documentation',
+            label: 'Methods',
             href: '?api=urban',
             iconClass: 'ico-book',
           },
           {
+            label: 'Definition',
+            href: '?api=definition',
+            iconClass: 'ico-book',
+          },
+          {
             label: 'GitHub',
-            href: Package.homepage,
+            href: Package.github,
             target: '_blank',
             iconClass: 'ico-md ico-github',
           },

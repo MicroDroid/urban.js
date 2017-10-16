@@ -38,4 +38,4 @@ jspm_packages
 
 .travis.yml
 
-assets
+# assets
