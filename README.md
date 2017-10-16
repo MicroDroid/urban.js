@@ -7,7 +7,7 @@
 </p>
 
 *NOTE: module hasn't been yet replaced on npm so it's recommended to install from github*
-`npm i professor-cat/urban.js`
+`npm i SnekJS/urban.js`
 
 ```js
 const urban = require('urban.js');
