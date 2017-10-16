@@ -6,8 +6,7 @@
   <img href="https://travis-ci.org/SnekJS/urban.js" src="https://travis-ci.org/SnekJS/urban.js.svg?branch=master" alt="Travis-CI Status"/>
 </p>
 
-*NOTE: module hasn't been yet replaced on NPM so it's recommended to install from GitHub*
-`npm i SnekJS/urban.js`
+`npm i urban.js`
 
 Documentation at https://urban.sneklab.xyz/
 
