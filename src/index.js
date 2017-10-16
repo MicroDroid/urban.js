@@ -1,37 +1,38 @@
 const fetch = require('snekfetch');
-const { BASE_URL, DEFINITION, randomArrayItem } = require('./Constants');
+const Definition = require('./Definition');
+const { BASE_URL, ran } = require('./Constants');
 
 const random = () => new fetch('GET', `${BASE_URL}/random`)
   .then(({ body }) => body && body.result_type != 'no_results' ? body : Promise.reject(TypeError('No results')));
 
 function first(query) {
   return Urban.search(query)
-    .then((body) => new DEFINITION(body.list[0], body));
+    .then((body) => new Definition(body.list[0], body));
 }
 
 const Urban = {
-  Definition: DEFINITION,
+  Definition,
   version: require('../package.json').version,
 
   random(query = null) {
     if (!query) {
       return random()
-        .then((body) => new DEFINITION(body.list[0], body));
+        .then((body) => new Definition(body.list[0], body));
     } else {
       return Urban.search(query)
-        .then((body) => new DEFINITION(randomArrayItem(body.list), body));
+        .then((body) => new Definition(ran(body.list), body));
     }
   },
 
   fetch(id) {
     return new fetch('GET', `${BASE_URL}/define?&defid=${id}`)
       .then(({ body }) => body && body.result_type != 'no_results' ?
-        new DEFINITION(body.list[0], body) : Promise.reject(TypeError('No results')));
+        new Definition(body.list[0], body) : Promise.reject(TypeError('No results')));
   },
 
   all(query, page) {
     return Urban.search(query, page)
-      .then((body) => body.list.map((d) => new DEFINITION(d, body)));
+      .then((body) => body.list.map((d) => new Definition(d, body)));
   },
 
   search(query, page = 1) {
