@@ -6,7 +6,7 @@ Docma.create()
     app: {
       title: Package.name,
       base: '/',
-      entrance: 'content:readme',
+      entrance: 'content:main',
       routing: 'query',
       server: Docma.ServerType.GITHUB,
     },

@@ -1,5 +1,5 @@
 <p align="center">
-  <img href="https://github.com/SnekJS/urban.js" src="https://github.com/SnekJS/urban.js/blob/master/assets/Urban.js.small.png?raw=true" alt="Urban.js logo"/>
+   ![Urban.js logo](https://github.com/SnekJS/urban.js/blob/master/assets/Urban.js.small.png?raw=true)
 </p>
 
 <p align="right">
@@ -12,7 +12,7 @@
 ```js
 const urban = require('urban.js');
 
-urban('hello').then(console.log) /* ->
+urban('hello').then(console.log) /*
 Definition {
 id: 69266,
 word: 'hello',
