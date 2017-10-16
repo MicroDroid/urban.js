@@ -1,7 +1,7 @@
 module.exports = {
   BASE_URL: 'https://api.urbandictionary.com/v0',
 
-  DEFINITION: class Definition {
+  DEFINITION: class Definition extends Object {
     constructor({
       defid,
       word,
@@ -12,6 +12,8 @@ module.exports = {
       author,
       thumbs_down,
     }, { tags, sounds }) {
+      super();
+
       /**
                 * ID of definition.
                 * @type {number}

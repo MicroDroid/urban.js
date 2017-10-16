@@ -6,17 +6,20 @@
   <img href="https://travis-ci.org/SnekJS/urban.js" src="https://travis-ci.org/SnekJS/urban.js.svg?branch=master" alt="Travis-CI Status"/>
 </p>
 
+*NOTE: module hasn't been yet replaced on npm so it's recommended to install from github*
+`npm i professor-cat/urban.js`
+
 ```js
-const urban = require('relevant-urban');
+const urban = require('urban.js');
 ```
 
 | Methods                |           returns               |                         description                       |
 |------------------------|---------------------------------|-----------------------------------------------------------|
 | urban('string')        | `=> Promise<Definition>`        | Gets first definition from urban matching provided query  |
 | urban.random()         | `=> Promise<Definition>`        | Gets random definition from urban                         |
-| urban.all('string')    | `=> Promise<Array<Definition>>` | Gets all definitions from page 1 matching provided query  |
 | urban.random('string') | `=> Promise<Definition>`        | Gets random definition from urban matching provided query |
-| urban.search('string'[, page]) | `=> Promise<api response>` | Gets raw response from api without any formating       |
+| urban.all('string'[, page=1])    | `=> Promise<Array<Definition>>` | Gets all definitions from given page matching provided query  |
+| urban.search('string'[, page=1]) | `=> Promise<api response>` | Gets raw response from api without any formating       |
 
 ## Example output
 *NOTE: `urban.random()` method doesn't have tags and sounds*
