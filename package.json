@@ -4,7 +4,6 @@
   "name": "urban.js",
   "author": "SnekJS",
   "main": "src/index.js",
-  "github": "https://github.com/SnekJS/urban.js",
   "description": "📜 Urban Dictionary API wrapper",
   "keywords": [
     "api",
@@ -34,6 +33,35 @@
   "jest": {
     "verbose": true,
     "testEnvironment": "node"
+  },
+  "Docma": {
+    "src": [
+{ "main": "./MAIN.md" },
+{ "urban": "./src/index.js" },
+{ "definition": "./src/Definition.js" }
+],
+    "nav": [
+      {
+            "label": "Main",
+            "href": "?content=main"
+          },
+          {
+            "label": "Methods",
+            "href": "?api=urban",
+            "iconClass": "ico-book"
+          },
+          {
+            "label": "Definition",
+            "href": "?api=definition",
+            "iconClass": "ico-book"
+          },
+          {
+            "label": "GitHub",
+            "href": "https://github.com/SnekJS/urban.js",
+            "target": "_blank",
+            "iconClass": "ico-md ico-github"
+}
+    ]
   },
   "repository": {
     "type": "git",
