@@ -34,10 +34,10 @@ const Urban = {
  * @param  {string} [query=null] Get random definition by specific query
  * @returns {Promise<Definition>} Returns random Definition
  * @example
- * const urban = require('urban.js');
+ * const { random } = require('urban.js');
  *
- * urban.random('hello').then(console.log);
- * urban.random().then(console.log);
+ * random('hello').then(console.log);
+ * random().then(console.log);
  */
   random(query = null) {
     if (!query) {

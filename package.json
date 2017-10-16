@@ -36,9 +36,9 @@
   },
   "Docma": {
     "src": [
-{ "main": "./MAIN.md" },
-{ "urban": "./src/index.js" },
-{ "definition": "./src/Definition.js" }
+      { "main": "./MAIN.md" },
+      { "urban": "./src/index.js" },
+      { "definition": "./src/Definition.js" }
 ],
     "nav": [
       {
