@@ -1,73 +1,79 @@
+/**
+ * Definition class
+ * @param {Object} data Data about definition from list object
+ * @param {Object} body Data about tags and sounds from request body
+ * @extends {Object}
+ */
 class Definition extends Object {
   constructor({
-    defid,
     word,
-    definition,
-    example,
-    permalink,
-    thumbs_up,
+    defid,
     author,
+    example,
+    thumbs_up,
+    permalink,
+    definition,
     thumbs_down,
   }, { tags, sounds }) {
     super();
 
     /**
               * ID of definition.
-              * @type {number}
+              * @type {Number}
               */
     this.id = defid;
 
     /**
               * Word used for definition.
-              * @type {string}
+              * @type {String}
               */
     this.word = word;
 
     /**
               * Definition itself.
-              * @type {string}
+              * @type {String}
               */
     this.definition = definition;
 
     /**
               * Definition example.
-              * @type {string}
+              * @type {String}
               */
     this.example = example;
 
     /**
               * Definition permalink.
-              * @type {string}
+              * @type {String}
               */
     this.URL = permalink;
 
     /**
               * Definition author name.
-              * @type {string}
+              * @type {String}
               */
     this.author = author;
 
     /**
               * Definition thumbs up.
-              * @type {number}
+              * @type {Number}
               */
     this.thumbsUp = thumbs_up;
 
     /**
               * Definition thumbs down.
-              * @type {number}
+              * @type {Number}
               */
     this.thumbsDown = thumbs_down;
 
     /**
               * Definition tags.
-              * @type {array<string>}
+              * @type {?string[]}
               */
     this.tags = Array.from(new Set(tags)) || null;
 
     /**
               * Definition sounds.
-              * @type {array<string>}
+              * @type {?string[]}
               */
     this.sounds = sounds || null;
   }
