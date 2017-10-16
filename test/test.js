@@ -4,14 +4,21 @@ const urban = require('../src');
 test('Fetching random urban definition', () => expect(urban.random())
   .resolves.toBeInstanceOf(urban.Definition));
 
-test('Fetching \'hello\' urban definition', () => urban('hello')
+test('Searching \'hello\' urban definition', () => urban('hello')
   .then((d) => {
     expect(d).toBeInstanceOf(urban.Definition);
     expect(d.word).toBe('hello');
     expect(d.tags).not.toBeNull();
   }));
 
-test('Fetching \'fsiojgjsgjsgihsghghjsh\' urban definition (success if not found)', () =>
+test('Fetching \'69266\' (hello) urban definition', () => urban.fetch('69266')
+  .then((d) => {
+    expect(d).toBeInstanceOf(urban.Definition);
+    expect(d.word).toBe('hello');
+    expect(d.tags).not.toBeNull();
+  }));
+
+test('Searching \'fsiojgjsgjsgihsghghjsh\' urban definition (success if not found)', () =>
   expect(urban('fsiojgjsgjsgihsghghjsh'))
     .rejects.toBeInstanceOf(TypeError));
 
