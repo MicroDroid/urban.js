@@ -36,7 +36,8 @@
   },
   "Docma": {
     "src": [
-      { "main": "./MAIN.md" },
+      { "try": "./pages/try.html" },
+      { "main": "./pages/main.md" },
       { "urban": "./src/index.js" },
       { "definition": "./src/Definition.js" }
 ],
@@ -54,6 +55,11 @@
             "label": "Definition",
             "href": "?api=definition",
             "iconClass": "ico-book"
+          },
+          {
+            "label": "Try",
+            "href": "?content=try",
+            "iconClass": "ico-play"
           },
           {
             "label": "GitHub",
