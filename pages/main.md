@@ -1,10 +1,9 @@
 <p align="center">
-   ![Urban.js logo](https://github.com/SnekJS/urban.js/blob/master/assets/Urban.js.small.png?raw=true)
+<img src="https://github.com/SnekJS/urban.js/blob/master/assets/Urban.js.small.png?raw=true" alt="Urban.js logo"/>
 </p>
-
 <p align="right">
-![NPM widget](https://nodei.co/npm/urban.js.png?mini=true)
-![Travis-CI Status](https://travis-ci.org/SnekJS/urban.js.svg?branch=master)
+<img src="https://nodei.co/npm/urban.js.png?mini=true" alt="NPM widget"/>
+<img href="https://travis-ci.org/SnekJS/urban.js" src="https://travis-ci.org/SnekJS/urban.js.svg?branch=master" alt="Travis-CI Status"/>
 </p>
 
 ```js
