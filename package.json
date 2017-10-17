@@ -1,6 +1,6 @@
 {
   "license": "MIT",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "name": "urban.js",
   "author": "SnekJS",
   "main": "src/index.js",
