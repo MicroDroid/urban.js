@@ -50,11 +50,11 @@ const Urban = {
   },
 
   /**
-   * Gets first definition by (thumbs up count - thumbs down) from 1 page.
+   * Gets first definition by (thumbs up count - thumbs down) from given page.
    *
    * @method top
    * @param  {string} query Query search for in urban.
-   * @param {string} page Page to resolve in top definition
+   * @param {string} [page=1] Page to resolve in top definition
    * @returns {Promise<Definition>} Returns Definition
    * @example
    * const { top } = require('urban.js');
