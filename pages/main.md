@@ -3,10 +3,9 @@
 </p>
 
 <p align="right">
-  <img href="https://travis-ci.org/SnekJS/urban.js" src="https://travis-ci.org/SnekJS/urban.js.svg?branch=master" alt="Travis-CI Status"/>
+![NPM widget](https://nodei.co/npm/urban.js.png?mini=true)
+![Travis-CI Status](https://travis-ci.org/SnekJS/urban.js.svg?branch=master)
 </p>
-
-`npm i urban.js`
 
 ```js
 const urban = require('urban.js');

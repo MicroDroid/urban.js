@@ -1,14 +1,12 @@
 <p align="center">
-  <img href="https://github.com/SnekJS/urban.js" src="https://github.com/SnekJS/urban.js/blob/master/assets/Urban.js.png?raw=true" alt="Urban.js logo"/>
+![Urban.js logo](https://github.com/SnekJS/urban.js/blob/master/assets/Urban.js.png?raw=true)
 </p>
-
 <p align="right">
-  <img href="https://travis-ci.org/SnekJS/urban.js" src="https://travis-ci.org/SnekJS/urban.js.svg?branch=master" alt="Travis-CI Status"/>
+![NPM widget](https://nodei.co/npm/urban.js.png?mini=true)
+![Travis-CI Status](https://travis-ci.org/SnekJS/urban.js.svg?branch=master)
 </p>
 
-`npm i urban.js`
-
-Documentation at https://urban.sneklab.xyz/
+Documentation at [urban.sneklab.xyz](https://urban.sneklab.xyz/)
 
 ```js
 const urban = require('urban.js');
