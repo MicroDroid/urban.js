@@ -15,7 +15,7 @@
     "definition"
   ],
   "dependencies": {
-    "snekfetch": "^3.5.1"
+    "snekfetch": "^3.5.2"
   },
   "devDependencies": {
     "jest": "^21.2.1",
@@ -37,37 +37,43 @@
   },
   "Docma": {
     "src": [
-      { "main": "./pages/main.md" },
-      { "urban": "./src/index.js" },
-      { "definition": "./src/Definition.js" }
-],
+      {
+        "main": "./pages/main.md"
+      },
+      {
+        "urban": "./src/index.js"
+      },
+      {
+        "definition": "./src/Definition.js"
+      }
+    ],
     "nav": [
       {
-            "label": "Main",
-            "href": "?content=main"
-          },
-          {
-            "label": "Methods",
-            "href": "?api=urban",
-            "iconClass": "ico-book"
-          },
-          {
-            "label": "Definition",
-            "href": "?api=definition",
-            "iconClass": "ico-book"
-          },
-          {
-            "label": "Try",
-            "href": "http://npm.runkit.com/urban.js",
-            "target": "_blank",
-            "iconClass": "ico-terminal"
-          },
-          {
-            "label": "GitHub",
-            "href": "https://github.com/SnekJS/urban.js",
-            "target": "_blank",
-            "iconClass": "ico-md ico-github"
-}
+        "label": "Main",
+        "href": "?content=main"
+      },
+      {
+        "label": "Methods",
+        "href": "?api=urban",
+        "iconClass": "ico-book"
+      },
+      {
+        "label": "Definition",
+        "href": "?api=definition",
+        "iconClass": "ico-book"
+      },
+      {
+        "label": "Try",
+        "href": "http://npm.runkit.com/urban.js",
+        "target": "_blank",
+        "iconClass": "ico-terminal"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/SnekJS/urban.js",
+        "target": "_blank",
+        "iconClass": "ico-md ico-github"
+      }
     ]
   },
   "repository": {

@@ -11,6 +11,13 @@ test('Searching \'hello\' urban definition', () => urban('hello')
     expect(d.tags).not.toBeNull();
   }));
 
+test('Searching top \'hello\' urban definition', () => urban.top('hello')
+  .then((d) => {
+    expect(d).toBeInstanceOf(urban.Definition);
+    expect(d.word).toBe('hello');
+    expect(d.tags).not.toBeNull();
+  }));
+
 test('Fetching \'69266\' (hello) urban definition', () => urban.fetch('69266')
   .then((d) => {
     expect(d).toBeInstanceOf(urban.Definition);

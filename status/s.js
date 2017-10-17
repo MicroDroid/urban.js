@@ -2,16 +2,10 @@ const Status = require('./Status');
 const { CI, TRAVIS, TRAVIS_REPO_SLUG, TRAVIS_COMMIT, STATUS_TOKEN } = process.env;
 const [state, label] = process.argv.slice(2);
 
-if (!CI || !TRAVIS) return null;
+if (!CI || !TRAVIS) process.exit();
 
-const status = new Status({
-  label,
-  sha: TRAVIS_COMMIT,
-  token: STATUS_TOKEN,
-  repo: TRAVIS_REPO_SLUG,
-});
+const status = new Status({ label, sha: TRAVIS_COMMIT, token: STATUS_TOKEN, repo: TRAVIS_REPO_SLUG });
 
-if (state == 'pending') return status.start();
-if (state == 'success') return status.pass();
-if (state == 'error') return status.fail();
-return null;
+if (state == 'pending') status.start();
+if (state == 'success') status.pass();
+if (state == 'error') status.fail();

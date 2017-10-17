@@ -50,6 +50,23 @@ const Urban = {
   },
 
   /**
+   * Gets first definition by (thumbs up count - thumbs down) from 1 page.
+   *
+   * @method top
+   * @param  {string} query Query search for in urban.
+   * @param {string} page Page to resolve in top definition
+   * @returns {Promise<Definition>} Returns Definition
+   * @example
+   * const { top } = require('urban.js');
+   *
+   * top('hello').then(console.log);
+   */
+  top(query, page) {
+    return Urban.all(query, page)
+      .then((list) => list.sort((a, b) => (b.thumbsUp - b.thumbsDown) - (a.thumbsUp - a.thumbsDown))[0]);
+  },
+
+  /**
  * Fetches Urban Definition by ID
  * @method fetch
  * @param  {string} id ID of definition
