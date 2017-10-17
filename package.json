@@ -18,8 +18,10 @@
     "snekfetch": "^3.5.2"
   },
   "devDependencies": {
+    "docma": "^1.5.1",
     "jest": "^21.2.1",
-    "eslint": "^4.8.0"
+    "eslint": "^4.8.0",
+    "jsdoc-dynamic": "^1.0.4"
   },
   "scripts": {
     "lint:fix": "eslint --fix src/ test/",
