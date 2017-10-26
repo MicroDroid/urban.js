@@ -1,6 +1,6 @@
 {
   "license": "Apache-2.0",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "name": "urban.js",
   "author": "SnekJS",
   "main": "src/index.js",
