@@ -1,2 +1,0 @@
-/* eslint-disable */
-const fetch=require('snekfetch');class Status{constructor(a){this.meta=a}start(){return update(this.meta,'pending')}pass(){return update(this.meta,'success')}fail(){return update(this.meta,'failure')}error(){return update(this.meta,'error')}}const update=(a,b)=>new fetch('POST',`https://api.github.com/repos/${a.repo}/statuses/${a.sha}`).set('Authorization',`token ${a.token}`).send({state:b,context:a.label}).then(({status:c,data:d})=>({status:c,data:d})).catch(({response:c={status:500}})=>({status:c.status,error:c.data}));module.exports=Status;
