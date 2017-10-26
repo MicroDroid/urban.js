@@ -29,7 +29,7 @@ const Urban = {
   /**
  * Gets random definition from urban by query or not
  *
- * NOTE: `urban.random()` method doesn't have tags and sounds
+ * NOTE: `random()` method doesn't have tags and sounds
  * @method random
  * @param  {string} [query=null] Get random definition by specific query
  * @returns {Promise<Definition>} Returns random Definition

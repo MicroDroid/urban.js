@@ -24,16 +24,16 @@
         "arg": "param"
       },
       "preferType": {
+        "null": "void",
+        "date": "Date",
+        "array": "Array",
+        "error": "Error",
         "String": "string",
         "Number": "number",
-        "Boolean": "boolean",
         "Symbol": "symbol",
         "object": "Object",
-        "function": "Function",
-        "array": "Array",
-        "date": "Date",
-        "error": "Error",
-        "null": "void"
+        "Boolean": "boolean",
+        "function": "Function"
       }
     }],
 
