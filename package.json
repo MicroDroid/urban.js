@@ -61,20 +61,20 @@
       },
       {
         "label": "Definition",
-        "href": "?api=definition",
-        "iconClass": "ico-book"
+        "iconClass": "ico-book",
+        "href": "?api=definition"
       },
       {
         "label": "Try",
-        "href": "http://npm.runkit.com/urban.js",
         "target": "_blank",
-        "iconClass": "ico-terminal"
+        "iconClass": "ico-terminal",
+        "href": "http://npm.runkit.com/urban.js"
       },
       {
         "label": "GitHub",
-        "href": "https://github.com/SnekJS/urban.js",
         "target": "_blank",
-        "iconClass": "ico-md ico-github"
+        "iconClass": "ico-md ico-github",
+        "href": "https://github.com/SnekJS/urban.js"
       }
     ]
   },

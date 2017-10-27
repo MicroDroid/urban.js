@@ -1,6 +1,6 @@
 # Packages
-node_modules/
 yarn.lock
+node_modules/
 
 # Log files
 logs/
@@ -11,16 +11,23 @@ deploy/
 
 # Miscellaneous
 .tmp/
-.vscode/
 docs/
+.vscode/
+
+# Configurations
+
+.travis.yml
+.eslintrc.json
+webpack.config.js
+
+# Github
+
+.github/
+.gitignore
+.gitattributes
 
 # NPM ignore
-.eslintrc.json
-.gitattributes
-.gitignore
-.travis.yml
-webpack.config.js
-.github/
+
 test/
 assets/
 pages/
