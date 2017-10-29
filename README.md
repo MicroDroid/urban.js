@@ -8,6 +8,8 @@
 
 Documentation at [urban.sneklab.xyz](https://urban.sneklab.xyz/)
 
+HTTP API based on urban.js [SnekJS/urban.now.sh](https://github.com/SnekJS/urban.now.sh)
+
 ```js
 const urban = require('urban.js');
 
