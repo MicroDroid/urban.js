@@ -6,7 +6,7 @@
 <img href="https://travis-ci.org/SnekJS/urban.js" src="https://travis-ci.org/SnekJS/urban.js.svg?branch=master" alt="Travis-CI Status"/>
 </p>
 
-Documentation at [urban.sneklab.xyz](https://urban.sneklab.xyz/)
+Documentation at [urban.js.org](https://urban.js.org/)
 
 HTTP API based on urban.js [SnekJS/urban.now.sh](https://github.com/SnekJS/urban.now.sh)
 
