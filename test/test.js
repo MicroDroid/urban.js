@@ -7,7 +7,7 @@ test('Fetching random urban definition', () => expect(urban.random())
 test('Searching \'hello\' urban definition', () => urban('hello')
   .then((d) => {
     expect(d).toBeInstanceOf(urban.Definition);
-    expect(d.word).toBe('hello');
+    expect(d.word).toBe('Hello');
     expect(d.tags).not.toBeNull();
   }));
 
